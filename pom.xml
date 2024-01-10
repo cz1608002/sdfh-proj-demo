@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.icbc</groupId>
+    <artifactId>ykgyl</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+    <name>ykgyl</name>
+    <description>icbc match 2020</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.9.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.45</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.1.21</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.7.0</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.10</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>0.2.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20160810</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.3.10</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.2</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.4.5</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore-nio</artifactId>
+            <version>4.4.5</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpasyncclient</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+
+        <!--        <dependency>
+                    <groupId>com.icbc</groupId>
+                    <artifactId>icbc-api-sdk-cop</artifactId>
+                    <version>0.0.1</version>
+                    <scope>system</scope>
+                    <systemPath>${project.basedir}/src/main/resources/libs/icbc-api-sdk-cop.jar</systemPath>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.icbc</groupId>
+                    <artifactId>icbc-api-sdk-cop-io</artifactId>
+                    <version>0.0.1</version>
+                    <scope>system</scope>
+                    <systemPath>${project.basedir}/src/main/resources/libs/icbc-api-sdk-cop-io.jar</systemPath>
+                </dependency>-->
+
+        <dependency>
+            <groupId>com.icbc</groupId>
+            <artifactId>InfosecCrypto_Java1_02_JDK14</artifactId>
+            <version>0.0.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/libs/InfosecCrypto_Java1_02_JDK14+.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.icbc</groupId>
+            <artifactId>icbc</artifactId>
+            <version>0.0.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/libs/icbc.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.icbc</groupId>
+            <artifactId>jdom</artifactId>
+            <version>0.0.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/libs/jdom.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.icbc</groupId>
+            <artifactId>jaxen-core</artifactId>
+            <version>0.0.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/libs/jaxen-core.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.icbc</groupId>
+            <artifactId>jaxen-jdom</artifactId>
+            <version>0.0.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/libs/jaxen-jdom.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.icbc</groupId>
+            <artifactId>saxpath</artifactId>
+            <version>0.0.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/libs/saxpath.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.icbc</groupId>
+            <artifactId>tools</artifactId>
+            <version>0.0.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/libs/tools.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.icbc</groupId>
+            <artifactId>annie</artifactId>
+            <version>0.0.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/libs/annie.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.icbc.sd</groupId>
+            <artifactId>hostgatewayservice</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/libs/hostgatewayservice-1.0.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.icbc.sd</groupId>
+            <artifactId>icbc-api-sdk-cop</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/libs/icbc-api-sdk-cop.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.icbc.sd</groupId>
+            <artifactId>icbc-api-sdk-cop-io</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/libs/icbc-api-sdk-cop-io.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.icbc.sd</groupId>
+            <artifactId>hsm-software-share-1.0.3</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/libs/hsm-software-share-1.0.3.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>api-rsasecurity</groupId>
+            <artifactId>api-rsasecurity</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/libs/api-rsasecurity.jar</systemPath>
+        </dependency>
+
+
+        <dependency>
+            <groupId>security-machine1.0.0</groupId>
+            <artifactId>security-machine1.0.0</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/libs/security-machine1.0.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>bcprov</groupId>
+            <artifactId>bcprov</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/libs/bcprov-jdk16-1.45.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.icbc</groupId>
+            <artifactId>api_client_internet</artifactId>
+            <version>0.0.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/libs/api_client_internet.jar</systemPath>
+        </dependency>
+        <!-- mybatis plus 代码生成器依赖 -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+        <!-- 代码生成器模板 -->
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.70</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.13</version>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <finalName>icbc-match</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <!-- 引入外部包打包一定要加 -->
+                <configuration>
+                    <includeSystemScope>true</includeSystemScope>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <!--打WAR包需要添加的插件 -->
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <webResources>
+                        <resource>
+                            <directory>src/main/resources/libs</directory>
+                            <targetPath>WEB-INF/lib</targetPath>
+                            <includes>
+                                <include>**/*.jar</include>
+                            </includes>
+                        </resource>
+                    </webResources>
+                </configuration>
+            </plugin>
+        </plugins>
+
+    </build>
+
+
+</project>
